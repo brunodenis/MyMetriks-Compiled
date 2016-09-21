@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<HEAD>
+	<META CHARSET="uft-8" />
+	<META HTTP-EQUIV="Content-Type" CONTENT="text/html; CHARSET=utf-8" />
+	<META HTTP-EQUIV="X-UA-Compatible" CONTENT="IE=edge" />
+	<META HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE" />
+	<META HTTP-EQUIV="PRAGMA" CONTENT="NO-CACHE" />
+	<META NAME="title" CONTENT="MyMetriks" />
+	<META NAME="copyright" CONTENT="MyMetriks.com" />
+	<META NAME="keywords" CONTENT="data, visualization, data visualization" />
+	<META NAME="description" CONTENT="data visualization" />
+	<META NAME="google" CONTENT="notranslate" />
+	<META NAME="robots" CONTENT="onindex, nofollow" />
+	<META NAME="referrer" CONTENT="origin">
+	<META NAME="apple-mobile-web-app-capable" CONTENT="yes" />
+	<META NAME="apple-mobile-web-app-status-bar-style" CONTENT="black" />
+	<META NAME="viewport" CONTENT="width=device-width,initial-scale=1,maximum-scale=1" />			<!--Surtout ne pas inclure height=device-height-->
+	<META NAME="HandheldFriendly" CONTENT="True" />
+	<META http-equiv="ClearType" CONTENT="on" />
+
+	<TITLE>MyMetriks</TITLE>
+	<LINK rel="icon" href="css/imgs/favicon.png" type="image/x-icon" />
+	<LINK rel="shortcut icon" href="css/imgs/favicon.png" type="image/x-icon" />
+	<LINK rel="stylesheet" type="text/css" href="css/mymetriks.webix.css" />
+	<LINK rel="stylesheet" type="text/css" href="css/mymetriks.css" />
+	<LINK rel="stylesheet" type="text/css" href="css/mymetriks.pivot.css" />
+	<LINK rel="stylesheet" type="text/css" href="css/alertify.css" />
+	<LINK rel="stylesheet" type="text/css" href="css/alertify.default.css" />
+</HEAD>
+<BODY>
+	<script type="text/javascript" src="js/webix.js"></script>
+	<script type="text/javascript" src="js/MMKWebix.min.js"></script>
+	<script type="text/javascript" src="js/alertify.min.js"></script>
+	<script type="text/javascript" src="js/MMK.min.js"></script>
+	<script type="text/javascript" src="js/highcharts.mymetriks.min.js" charset="utf-8"></script>
+	<script type="text/javascript" src="js/MMKSQL.min.js"></script>
+	<script type="text/javascript" src="js/MMKPivot.js"></script>
+	<script type="text/javascript" src="js/MMKDash.min.js"></script>
+	<script type="text/javascript" src="js/lang/fr-FR.js" charset="utf-8"></script>
+
+	<script type="text/javascript" src="js/MMKObjs.min.js" charset="utf-8"></script>
+	
+	<script type="text/javascript">
+	webix.ready(function(){
+		webix.ui.fullScreen();
+		if (!webix.env.touch && webix.ui.scrollSize) {webix.CustomScroll.init();}
+		if(portal.globals.device !== null) {webix.Touch.enable();}
+		portal.startup();
+	});
+	</script>
+</BODY>
+</html>
